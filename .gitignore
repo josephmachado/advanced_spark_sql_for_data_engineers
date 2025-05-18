@@ -11,3 +11,6 @@ wheels/
 
 # Ipynb checkpoints
 .ipynb_checkpoints/
+
+# Ignore *.csv files
+*.csv
