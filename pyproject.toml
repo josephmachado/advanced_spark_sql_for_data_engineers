@@ -9,5 +9,7 @@ dependencies = [
     "ipykernel>=6.29.5",
     "jupyterlab>=4.4.3",
     "loguru>=0.7.3",
-    "pyspark>=4.0.0",
+    "pyspark-client>=4.0.0",
+    "pyspark-connect>=4.0.0",
+    "pyspark[sql]>=4.0.0",
 ]
