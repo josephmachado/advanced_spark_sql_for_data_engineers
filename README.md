@@ -12,9 +12,11 @@
 
 1. [docker](https://docs.docker.com/engine/install/) & [docker compose](https://docs.docker.com/compose/)
 
-Start the container with 
+Start the container by cloning the repo and starting the containers (note you will have to stop other containers that you mayh have runnign on port 8888 & 8080) 
 
 ```bash
+git clone https://github.com/josephmachado/advanced_spark_sql_for_data_engineers.git
+cd advanced_spark_sql_for_data_engineers
 docker compose up -d
 sleep 30
 ```
