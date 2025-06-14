@@ -102,8 +102,8 @@ if __name__ == "__main__":
         "--scaling-factor",
         dest="scaling_factor",
         type=float,
-        default=0.5,
-        help="Scaling factor for TPC-H dataset (default: 0.5)",
+        default=0.1,
+        help="Scaling factor for TPC-H dataset (default: 0.1)",
     )
     parser.add_argument(
         "--format",
