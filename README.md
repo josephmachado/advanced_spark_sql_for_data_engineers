@@ -1,12 +1,8 @@
 
-## YouTube Live workshop 
-
-
 ## Live virtual workshop
 
 The workshop will be streamed on YouTube live: [Spark SQL Workshop: Advanced join & group by techniques](https://www.youtube.com/live/OPBhvZOq7oo). Post stream, it will be available to watch and follow at your own pace.
 
-**, YouTube Link**
 [![Live workshop](https://img.youtube.com/vi/OPBhvZOq7oo/0.jpg)](https://www.youtube.com/live/OPBhvZOq7oo)
 
 ### Codespaces
