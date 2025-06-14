@@ -1,10 +1,28 @@
 
-## Setup
+## YouTube Live workshop 
+
+
+## Live virtual workshop
+
+The workshop will be streamed on YouTube live: [Spark SQL Workshop: Advanced join & group by techniques](https://www.youtube.com/live/OPBhvZOq7oo). Post stream, it will be available to watch and follow at your own pace.
+
+**, YouTube Link**
+[![Live workshop](https://img.youtube.com/vi/OPBhvZOq7oo/0.jpg)](https://www.youtube.com/live/OPBhvZOq7oo)
 
 ### Codespaces
 
 **Note** Please remember to switch off your code spaces.
 
+1. Start a codespace machine ![start code space](./assets/cs1.png).
+2. Wait for the terminal to start and then run the command `docker compose up -d && sleep 30` on the terminal ![start containers](./assets/cs2.png).
+3. Click on ports tab -> click on the globe icon in the address for port `8888`. ![Open Jupyter Notebook](./assets/cs3.png).
+4. Click on the `notebooks` folder and open `adv_joins_group_by.ipynb`. ![Jupyter ](./assets/cs4.png).
+5. Open as jupyter lab, for better experience. ![Jupyter Lab](./assets/cs5.png)
+
+Follow along with the workshop!
+
+**Note** remember to switch off codespaces as 
+![Codespaces off](./assets/cs_delete.png)
 
 ### Local with Docker
 
