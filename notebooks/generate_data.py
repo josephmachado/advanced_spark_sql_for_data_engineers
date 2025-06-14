@@ -2,6 +2,11 @@ import argparse
 import duckdb
 import os
 import logging
+
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+
 logger = logging.getLogger(__name__)
 
 
@@ -90,7 +95,6 @@ def run(scaling_factor, format, output_folder_path):
 
 
 if __name__ == "__main__":
-
     # Set up argument parser
     parser = argparse.ArgumentParser(description="Generate TPC-H dataset using DuckDB")
     parser.add_argument(

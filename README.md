@@ -13,6 +13,7 @@ python generate_data.py --sf 0.5 --format csv
 python -m ipykernel install --user --name=venv --display-name="My Virtual Environment"
 
 jupyter lab # this opens http://localhost:8888/lab
+# Spark UI at http://localhost:8080 
 # stop with Ctrl + c
 ```
 
