@@ -3,6 +3,9 @@
 
 ### Codespaces
 
+**Note** Please remember to switch off your code spaces.
+
+
 ### Local with Docker
 
 **Prerequisites**:
