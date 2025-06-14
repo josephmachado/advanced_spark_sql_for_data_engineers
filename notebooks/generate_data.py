@@ -1,7 +1,8 @@
 import argparse
 import duckdb
 import os
-from loguru import logger
+import logging
+logger = logging.getLogger(__name__)
 
 
 def create_tpch_tables(scaling_factor=1):
@@ -21,7 +22,7 @@ def create_tpch_tables(scaling_factor=1):
     # Generate TPC-H data using DuckDB's built-in TPC-H generator
     conn.execute(f"CALL dbgen(sf={scaling_factor});")
 
-    logger.success(f"TPC-H tables created with scaling factor {scaling_factor}")
+    logger.info(f"TPC-H tables created with scaling factor {scaling_factor}")
 
     return conn
 
@@ -64,9 +65,9 @@ def create_tpch_dataset(conn, format, output_folder_path):
         else:
             raise ValueError(f"Unsupported format: {format}")
 
-        logger.success(f"Exported {table} to {output_path}")
+        logger.info(f"Exported {table} to {output_path}")
 
-    logger.success(f"All tables exported successfully to {format} format")
+    logger.info(f"All tables exported infofully to {format} format")
 
 
 def run(scaling_factor, format, output_folder_path):
@@ -83,19 +84,13 @@ def run(scaling_factor, format, output_folder_path):
     conn = create_tpch_tables(scaling_factor)
     create_tpch_dataset(conn, format, output_folder_path)
 
-    logger.success(
+    logger.info(
         f"TPC-H dataset with scaling factor {scaling_factor} has been generated in {output_folder_path}"
     )
 
 
 if __name__ == "__main__":
-    # Configure logger
-    logger.remove()
 
-    logger.add(
-        sink=lambda msg: print(msg),
-        format="<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | <level>{message}</level>",
-    )
     # Set up argument parser
     parser = argparse.ArgumentParser(description="Generate TPC-H dataset using DuckDB")
     parser.add_argument(
