@@ -1,5 +1,11 @@
 
 
+* [Live virtual workshop](#live-virtual-workshop)
+* [Setup](#setup)
+    * [Codespaces](#codespaces)
+    * [Local with Docker](#local-with-docker)
+
+
 ## Live virtual workshop
 
 The workshop will be streamed on YouTube live: [Spark SQL Workshop: Advanced join & group by techniques](https://www.youtube.com/live/OPBhvZOq7oo). Post stream, it will be available to watch and follow at your own pace.
